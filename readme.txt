@@ -28,3 +28,4 @@ Proses instalasi sangatlah mudah, sama dengan melakukkan instalasi plugin WordPr
 == Screenshots == 
 
 1. screenshot.jpg Tampilan JNE Indo Shipping pada form Checkout.
+2. screenshot-1.jpg Tampilan JNE Indo Shipping.
