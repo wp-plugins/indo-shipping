@@ -25,6 +25,6 @@ Proses instalasi sangatlah mudah, sama dengan melakukkan instalasi plugin WordPr
 2. Download plugin JNE Indo Shipping, lalu extract dan Upload ke directory '/wp-content/plugins/' 
 3. Aktifkan JNE Indo Shipping plugin pada menu 'Plugins' pada WordPress.
 
-== Screenshot ==
+== Screenshots ==
 
 1. screenshot.jpg Tampilan JNE Indo Shipping pada form Checkout.
