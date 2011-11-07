@@ -3,7 +3,7 @@ Contributors: Chung
 Tags: wp e-commerce, shipping plugin, Indonesian Shipping plugin, JNE shipping, TIKI shipping
 Requires at least: 3.0
 Tested up to: 3.2.1
-Stable tag: 1.3.1
+Stable tag: 1.2
 
 Plugin shipping Indonesia yang khusus untuk diintegrasikan dengan plugin WP-Ecommerce.
 
@@ -25,6 +25,7 @@ Proses instalasi sangatlah mudah, sama dengan melakukkan instalasi plugin WordPr
 2. Download plugin JNE Indo Shipping, lalu extract dan Upload ke directory '/wp-content/plugins/' 
 3. Aktifkan JNE Indo Shipping plugin pada menu 'Plugins' pada WordPress.
 
-== Screenshot ==
+== Screenshots == 
 
 1. screenshot.jpg Tampilan JNE Indo Shipping pada form Checkout.
+2. screenshot-1.jpg Tampilan JNE Indo Shipping.
