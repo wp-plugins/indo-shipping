@@ -3,7 +3,7 @@
  Plugin Name: Indo Shipping
  Plugin URI: http://blog.chung.web.id/tag/jne-indo-shipping/
  Description: Indonesian typical Shipping Module For WP E-Commerce
- Version: 1.0
+ Version: 1.2
  Author: Agung Nugroho
  Author URI: http://chung.web.id/
 */
