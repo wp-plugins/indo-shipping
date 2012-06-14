@@ -3,7 +3,7 @@ Contributors: Chung
 Tags: wp e-commerce, shipping plugin, Indonesian Shipping plugin, JNE shipping, TIKI shipping
 Requires at least: 3.0
 Tested up to: 3.2.1
-Stable tag: 1.2
+Stable tag: 1.3
 
 Plugin shipping Indonesia yang khusus untuk diintegrasikan dengan plugin WP-Ecommerce.
 
@@ -12,6 +12,8 @@ Plugin shipping Indonesia yang khusus untuk diintegrasikan dengan plugin WP-Ecom
 Dengan menggunakan **JNE Indo Shipping**, maka anda dapat menampilkan daftar ongkos kirim per daerah di Indonesia yang telah ditentukan dan langsung terintegrasi dengan WP-Ecommerce.
 
 Cocok digunakan untuk menampilkan daftar ongkos kirim dari JNE, TIKI atau yang lainnya dan secara langsung akan berpengaruh pada nilai order anda.
+
+Saat ini tersedia versi offline (input database tarif manual) yang dapat di unduh [dimari](http://wordpress.org/extend/plugins/jne-shipping/)
 
 Untuk informasi lebih lanjut mengenai plugin ini, silakan langsung saja [kemari](http://chung.web.id).
 
@@ -27,5 +29,5 @@ Proses instalasi sangatlah mudah, sama dengan melakukkan instalasi plugin WordPr
 
 == Screenshots == 
 
-1. screenshot.jpg Tampilan JNE Indo Shipping pada form Checkout.
-2. screenshot-1.jpg Tampilan JNE Indo Shipping.
+1. screenshot-1.png Tampilan JNE Indo Shipping pada form Checkout.
+2. screenshot-2.png Tampilan JNE Indo Shipping.
