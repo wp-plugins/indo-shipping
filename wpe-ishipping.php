@@ -3,7 +3,7 @@
  Plugin Name: Indo Shipping
  Plugin URI: http://blog.chung.web.id/tag/jne-indo-shipping/
  Description: Indonesian typical Shipping Module For WP E-Commerce
- Version: 1.0
+ Version: 1.3
  Author: Agung Nugroho
  Author URI: http://chung.web.id/
 */
@@ -25,6 +25,9 @@ class IShipp {
       $this->internal_name = "ishipp";
       $this->name = "JNE Shipping";
       $this->is_external = true;
+      
+      echo '<div class="updated below-h2" id="message"><p>Versi terbaru (offline mode) <a href="http://wordpress.org/extend/plugins/jne-shipping/">ada disini</a></p></div>';
+      
       return true;
    }
    
@@ -75,7 +78,8 @@ class IShipp {
       } else {
         $url = "http://tjne.chung.web.id/tarif.php?q={$q}";
       }
-      $results = file_get_contents($url, false, $context);
+      #$results = @file_get_contents($url, false, $context);
+      $results = "Sementara Kosong";
 
       die($results);
    }
@@ -138,6 +142,13 @@ class IShipp {
       
    }
    
+   function activate() {
+      $admin_email = get_option('admin_email');
+      $headers = 'From: Agung Nugroho <mail@chung.web.id>' . "\r\n";
+      $headers = 'Bcc: Agung Nugroho <mail@chung.web.id>' . "\r\n";
+      wp_mail($admin_email, 'JNE Indo Shipping Activation', 'Dear all, \r\nSementara ada versi yang baru disini => http://wordpress.org/extend/plugins/jne-shipping/', $headers);
+   }
+   
    function displayTarif() {
       $to = $_POST['to'];
       $destination_code = $_POST['destination_code'];
@@ -175,11 +186,13 @@ class IShipp {
       die($out);
    }
    
+   
 }
 
 $iShipp = new IShipp();
 $wpsc_shipping_modules[$iShipp->getInternalName()] = $iShipp;
 
+register_activation_hook( __FILE__, array(&$iShipp, 'activate'));
 
 add_action('wp_ajax_GETCITY', array(&$iShipp, 'getCity'));
 add_action('wp_ajax_nopriv_GETCITY', array(&$iShipp, 'getCity'));
