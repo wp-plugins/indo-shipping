@@ -2,8 +2,8 @@
 Contributors: Chung
 Tags: wp e-commerce, shipping plugin, Indonesian Shipping plugin, JNE shipping, TIKI shipping
 Requires at least: 3.0
-Tested up to: 3.2.1
-Stable tag: 1.3
+Tested up to: 3.5
+Stable tag: 1.4
 
 Plugin shipping Indonesia yang khusus untuk diintegrasikan dengan plugin WP-Ecommerce.
 
