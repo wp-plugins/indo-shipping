@@ -30,7 +30,7 @@ class IShipp {
    }
    
    function _warning() {
-      echo '<div class="updated below-h2" id="message"><p>Versi terbaru (offline mode) <a href="http://wordpress.org/extend/plugins/jne-shipping/">ada disini</a>, penjelasan lengkap dapat di lihat <a href="http://blog.chung.web.id/2012/06/12/jne-shipping-versi-offline-untuk-wp-e-commerce/">disini.</a></p></div>';      
+      echo '<div class="updated fade" id="message-1"><p>Versi terbaru (offline mode) <a href="http://wordpress.org/extend/plugins/jne-shipping/">ada disini</a>, penjelasan lengkap dapat di lihat <a href="http://blog.chung.web.id/2012/06/12/jne-shipping-versi-offline-untuk-wp-e-commerce/">disini.</a></p><p>Untuk pengguna <b>YAK for Wordpress</b> bisa juga menggunakan plugin serupa, yang ada di <a href="http://blog.chung.web.id/jne-shipping-for-yak/">sini.</a></div>';      
    } 
    
    function getName() {
@@ -203,6 +203,6 @@ add_action('wp_ajax_nopriv_DESTLOCFORM', array(&$iShipp, 'destLocationForm'));
 add_action('wp_ajax_GETTARIF', array(&$iShipp, 'displayTarif'));
 add_action('wp_ajax_nopriv_GETTARIF', array(&$iShipp, 'displayTarif'));
 
-add_action('admin_notices', '_warning');
+add_action('admin_notices', array(&$iShipp, '_warning'));
 
 ?>
