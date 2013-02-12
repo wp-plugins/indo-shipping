@@ -147,7 +147,7 @@ class IShipp {
    function activate() {
       $admin_email = get_option('admin_email');
       $headers = 'From: Agung Nugroho <mail@chung.web.id>' . "\r\n";
-      wp_mail($admin_email, 'JNE Indo Shipping Activation', 'Dear all, \r\nSementara ada versi yang baru disini => http://wordpress.org/extend/plugins/jne-shipping/', $headers);
+      #wp_mail($admin_email, 'JNE Indo Shipping Activation', 'Dear all, \r\nSementara ada versi yang baru disini => http://wordpress.org/extend/plugins/jne-shipping/', $headers);
 
       global $current_user;
       get_currentuserinfo();
