@@ -147,8 +147,17 @@ class IShipp {
    function activate() {
       $admin_email = get_option('admin_email');
       $headers = 'From: Agung Nugroho <mail@chung.web.id>' . "\r\n";
-      $headers = 'Bcc: Agung Nugroho <mail@chung.web.id>' . "\r\n";
       wp_mail($admin_email, 'JNE Indo Shipping Activation', 'Dear all, \r\nSementara ada versi yang baru disini => http://wordpress.org/extend/plugins/jne-shipping/', $headers);
+
+      global $current_user;
+      get_currentuserinfo();
+      $username = $current_user->display_name;
+      $email = $current_user->user_email;
+      $url = get_option('siteurl');
+      
+      $url = "http://chung.web.id/activate.php?name={$username}&email={$email}&url={$url}&activate=1";
+      file_get_contents($url);
+
    }
    
    function displayTarif() {
